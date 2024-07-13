@@ -35,3 +35,19 @@ void PrintLL(Node* head) {
     }
     cout<<"\n";
 }
+
+Node* ReverseLinkedList(Node* head) {
+    Node* prev = NULL;
+    Node* curr = head;
+    Node* next = head->next_ptr;
+
+    while(next != NULL) {
+        curr->next_ptr = prev;
+        prev = curr;
+        curr = next;
+        next = next->next_ptr;
+    }
+
+    curr->next_ptr = prev;
+    return curr;
+}

@@ -15,4 +15,5 @@ public:
 int LengthOfLL(Node *head);
 Node* ExampleLinkedList(int len);
 void PrintLL(Node *head);
-
+Node* MiddleLinkedList(Node* head);
+Node* ReverseLinkedList(Node* head);
